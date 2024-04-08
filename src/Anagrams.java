@@ -52,5 +52,23 @@ public class Anagrams {
         mix(str, fact);
     }
 
-}
+    public static void palindrome (String str){
+        boolean x = true;
+        char[] allChars = str.toCharArray();
+        for( int i = 0, i<= str.length(), i++){
+            for (int j=str.length(), j>=0, j--){
+                if (allChars[i] == allChars[j]){
+                    x = true;                                
+                    } else {
+                    x = false;             
+             }
 
+    }
+    }
+        if ( x == true){
+            System.out.println("è palindromo");
+            
+    } else {
+            System.out.println("non è palindromo");
+    }
+    }
