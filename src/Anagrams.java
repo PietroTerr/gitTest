@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.lang.Math;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -41,6 +42,14 @@ public class Anagrams {
             System.out.println(new String(mixedChars));
         }
 
+    }
+    public static void allAnagrams(String str){
+        int i,fact=1;
+        int number=str.length();// our number to do the necessary calculations in class Factorial
+        for(i=1;i<=number;i++){
+            fact=fact*i;
+        }
+        mix(str, fact);
     }
 
 }
